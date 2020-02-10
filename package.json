@@ -1,0 +1,20 @@
+{
+  "name": "nodejs-learning-1",
+  "version": "1.0.0",
+  "description": "Livraria",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GabrielDeveloperOne/nodejs-learning-1.git"
+  },
+  "author": "Gabriel Pereira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GabrielDeveloperOne/nodejs-learning-1/issues"
+  },
+  "homepage": "https://github.com/GabrielDeveloperOne/nodejs-learning-1#readme"
+}
