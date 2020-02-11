@@ -7,14 +7,16 @@ app.listen(3000, function(){
 });
 
 app.get('/', function(req, resp){
+   resp.send(
     `<!DOCTYPE html>
-        <html lang="pt-br">
-            <head>
-                <meta charset="utf-8">
-            </head>
-            <body>
-                <h1>Servidor iniciado</h1>
-            </body>
-        </html>
-    `
-})
+    <html lang="pt-br">
+        <head>
+            <meta charset="utf-8">
+        </head>
+        <body>
+            <h1>Servidor iniciado</h1>
+        </body>
+    </html>
+ `
+   ) 
+});
