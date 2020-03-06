@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/GabrielDeveloperOne/nodejs-learning-1#readme",
   "dependencies": {
-    "express": "4.16.3"
+    "express": "4.16.3",
+    "marko": "4.19.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
