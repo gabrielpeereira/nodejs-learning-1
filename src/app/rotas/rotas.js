@@ -1,3 +1,5 @@
+const LivroDao = require('../infra/livro-dao');
+
 const db = require('../../config/database');
 
 module.exports = (app) => {
