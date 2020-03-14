@@ -19,24 +19,14 @@ module.exports = (app) => {
      });
 
      app.get('/livros', function(req, resp){
-
-        listaLivros(function(erro, resultados){
-            resp.marko(
-                require('../views/livros/lista/lista.marko'),
-                {
-                    livros: resultados
-                }
-            ) 
-         })
-
-        //  db.all('SELECT * FROM livros', function(erro, resultados){
-        //     resp.marko(
-        //         require('../views/livros/lista/lista.marko'),
-        //         {
-        //             livros: resultados
-        //         }
-        //     ) 
-        //  });
+        const livroDao = new LivroDao(db)
+        livroDao.lista()
+                .then(livros => resp.marko(
+                    require('../views/livros/lista/lista.marko'),
+                    {
+                        livros: livros
+                    }
+                )).catch(erro => console.log(erro));
 
      });
 };
