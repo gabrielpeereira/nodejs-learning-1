@@ -30,8 +30,12 @@ module.exports = (app) => {
 
      });
 
-     app.get('livro;form', function(req, resp) {
+     app.get('livro/form', function(req, resp) {
          resp.marko(require('../views/livros/form/form.marko'));
+     })
+
+     app.post('/livros', function(req, resp){
+         console.log(req.body);
      })
 };
 
