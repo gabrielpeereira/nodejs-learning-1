@@ -30,7 +30,7 @@ module.exports = (app) => {
 
      });
 
-     app.get('livro/form', function(req, resp) {
+     app.get('/livros/form', function(req, resp) {
          resp.marko(require('../views/livros/form/form.marko'));
      })
 
