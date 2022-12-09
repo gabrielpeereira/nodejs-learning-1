@@ -19,7 +19,7 @@
   "homepage": "https://github.com/GabrielDeveloperOne/nodejs-learning-1#readme",
   "dependencies": {
     "body-parser": "1.18.3",
-    "express": "4.16.3",
+    "express": "4.17.3",
     "marko": "4.19.3",
     "sqlite": "^3.0.3"
   },
